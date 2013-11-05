@@ -1,5 +1,5 @@
 JobBoard::Application.routes.draw do
-  root to: "jobs#index"
+  root to: "jobs#premium"
 
   resources :jobs
 

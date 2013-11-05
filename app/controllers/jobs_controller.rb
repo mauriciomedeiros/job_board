@@ -10,6 +10,10 @@ class JobsController < ApplicationController
     end
   end
 
+  def premium
+    @jobs = Job.where(premium: true).all
+  end
+
   # GET /jobs/1
   # GET /jobs/1.json
   def show
